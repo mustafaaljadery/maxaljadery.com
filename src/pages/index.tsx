@@ -7,7 +7,7 @@ export default function Home({ data }: any) {
   return (
     <PageHead>
       <div className="flex flex-col justify-center items-center">
-        <header className="py-5 flex flex-row justify-between items-between w-1/2 ">
+        <header className="py-5 flex flex-row justify-between items-between w-[95%] md:w-4/5 lg:w-1/2">
           <div className="flex flex-row space-x-3 my-auto">
             <Image
               alt="profile picture"
@@ -47,7 +47,7 @@ export default function Home({ data }: any) {
             </a>
           </div>
         </header>
-        <div className="py-10 flex flex-col w-1/3">
+        <div className="py-10 flex flex-col w-[95%] md:w-3/5 lg:w-1/2 xl:w-1/3">
           <h1 className="text-2xl silka-bold text-gray-900">BIO</h1>
           <p className="mt-4 text-xl silka-regular text-[#363636]">
             I'm working on{' '}
