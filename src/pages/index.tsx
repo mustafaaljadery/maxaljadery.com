@@ -56,7 +56,7 @@ export default function Home({ data }: any) {
             </span>
             , a parent company that owns{' '}
             <a
-              href="https://trydisperse.com"
+              href="https://trydisperse.com?ref=maxaljadery.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xl silka-semibold text-gray-900 underline hover:opacity-90"
