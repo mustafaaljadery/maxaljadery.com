@@ -27,14 +27,12 @@ export default function PageHead(props: any) {
         <meta name="description" content={meta?.description} />
         <meta
           property="og:url"
-          content={`https://maxaljadery.com${router.asPath}`}
+          content={`https://www.maxaljadery.com${router.asPath}`}
         />
-        {/*
         <link
           rel="canonical"
-          href={`https://maxaljadery.com${router.asPath}`}
+          href={`https://www.maxaljadery.com${router.asPath}`}
         />
-  */}
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Max Aljadery" />
         <meta property="og:description" content={meta.description} />
