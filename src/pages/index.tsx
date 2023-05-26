@@ -50,7 +50,7 @@ export default function Home({ data }: any) {
         <div className="py-10 flex flex-col w-[95%] md:w-3/5 lg:w-1/2 xl:w-1/3">
           <h1 className="text-2xl silka-bold text-gray-900">BIO</h1>
           <p className="mt-4 text-xl silka-regular text-[#363636]">
-            I'm working on{' '}
+            I&apos;m working on{' '}
             <span className="text-xl silka-semibold text-gray-900">
               Garza
             </span>
