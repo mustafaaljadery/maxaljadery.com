@@ -1,174 +1,172 @@
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 import Image from 'next/image';
-import threads from '../../public/twitter_threads.json';
-import blog_posts from '../../public/blog_posts.json';
-import PageHead from '@/components/PageHead';
+import Head from 'next/head';
 
-export default function Home({ data }: any) {
+const tools = [
+  { link: '', image: '/tools/nodejs.png' },
+  { link: '', image: '/tools/typescript.png' },
+  { link: '', image: '/tools/cp.png' },
+  { link: '', image: '/tools/go.png' },
+  { link: '', image: '/tools/python.png' },
+  { link: '', image: '/tools/remix.png' },
+  { link: '', image: '/tools/nextjs.png' },
+  { link: '', image: '/tools/react.png' },
+  { link: '', image: '/tools/svelte.png' },
+  { link: '', image: '/tools/django.png' },
+  { link: '', image: '/tools/express.png' },
+  { link: '', image: '/tools/postgres.png' },
+  { link: '', image: '/tools/mysql.png' },
+  { link: '', image: '/tools/clickhouse.svg' },
+  { link: '', image: '/tools/aws.png' },
+  { link: '', image: '/tools/gc.png' },
+  { link: '', image: '/tools/fly.png' },
+  { link: '', image: '/tools/docker.png' },
+  { link: '', image: '/tools/redis.svg' },
+  { link: '', image: '/tools/pinecone.png' },
+  { link: '', image: '/tools/git.png' },
+  { link: '', image: '/tools/github.png' },
+  { link: '', image: '/tools/huggingface.png' },
+  { link: '', image: '/tools/langchain.png' },
+  { link: '', image: '/tools/prisma.svg' },
+  { link: '', image: '/tools/graphql.png' },
+  { link: '', image: '/tools/excel.png' },
+  { link: '', image: '/tools/pytorch.png' },
+  { link: '', image: '/tools/snowflake.png' },
+  { link: '', image: '/tools/figma.jpg' },
+  { link: '', image: '/tools/eth.png' },
+  { link: '', image: '/tools/sol.png' },
+  { link: '', image: '/tools/apt.png' },
+];
+
+export default function Home() {
   return (
-    <PageHead>
-      <div className="flex flex-col justify-center items-center">
-        <header className="py-5 flex flex-row justify-between items-between w-[95%] md:w-4/5 lg:w-1/2">
-          <div className="flex flex-row space-x-3 my-auto">
+    <>
+      <Head>
+        <title>Max Aljadery</title>
+      </Head>
+      <Header />
+      <main className="flex flex-col mt-14 justify-center items-center w-full">
+        <div className="w-1/2 flex flex-col">
+          <div className="flex flex-row space-x-4">
             <Image
-              alt="profile picture"
-              src="/profile.jpg"
-              width={36}
-              height={36}
-              className="my-auto rounded"
+              src="/mustafa.jpg"
+              alt="Image of me"
+              width={76}
+              height={76}
+              className="rounded-full my-auto"
             />
-            <p className="text-lg my-auto text-[#363636] silka-medium">
-              Max Aljadery
+            <div className="flex flex-col space-y-1 my-auto">
+              <h1 className="font-bold text-xl text-[#363636]">
+                Mustafa (Max) Aljadery
+              </h1>
+              <p className="font-light text-gray-500">
+                I like to build!
+              </p>
+            </div>
+          </div>
+          <div className="mt-12 flex flex-col">
+            <p className="text-xl font-light text-gray-500">
+              <span className="italic font-medium text-[#363636]">
+                Software Engineering
+              </span>
+              ,{' '}
+              <span className="italic font-medium text-[#363636]">
+                ML
+              </span>
+              ,{' '}
+              <span className="italic font-medium text-[#363636]">
+                Design
+              </span>
+              , and{' '}
+              <span className="italic font-medium text-[#363636]">
+                Finance
+              </span>
+              .
+            </p>
+            <p className="mt-8 text-xl text-gray-500 font-light">
+              <span className="text-[#363636] font-semibold">
+                Difficult Scientific
+              </span>{' '}
+              and{' '}
+              <span className="text-[#363636] font-semibold">
+                Engineering Problems
+              </span>{' '}
+              are the{' '}
+              <span className="text-[#363636] font-bold">ONLY</span>{' '}
+              things I care about.
+            </p>
+            <p className="mt-6 text-xl text-gray-500 font-light">
+              My current interests are{' '}
+              <span className="font-medium text-[#363636]">AI</span>,{' '}
+              <span className="font-medium text-[#363636]">
+                Systems
+              </span>
+              , and{' '}
+              <span className="font-medium text-[#363636]">
+                Hard Tech
+              </span>
+              .
             </p>
           </div>
-          <div className="flex flex-row space-x-5 my-auto">
-            <a
-              href="https://github.com/mustafaaljadery"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm silka-semibold text-gray-600 hover:opacity-80"
-            >
-              Github
-            </a>
-            <a
-              href="https://twitter.com/maxaljadery"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm silka-semibold text-gray-600 hover:opacity-80"
-            >
-              Twitter
-            </a>
-            <a
-              href="https://www.linkedin.com/in/mustafaaljadery/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm silka-semibold text-gray-600 hover:opacity-80"
-            >
-              Linkedin
-            </a>
+          <div className="flex flex-col mt-20">
+            <p className="font-bold text-[#363636] text-2xl">
+              About Me
+            </p>
+            <ul className="mt-5 list-disc flex flex-col space-y-4">
+              <li className="text-lg ml-12 font-light">
+                I'm extremely competitive,{' '}
+                <span className="italic">
+                  I will run through walls to succeed
+                </span>
+                .
+              </li>
+              <li className="text-lg ml-12 font-light">
+                I take work very seriously.
+              </li>
+              <li className="text-lg ml-12 font-light">
+                I'm "done by noon," not "by end of week." Time is the
+                denominator.
+              </li>
+              <li className="text-lg ml-12 font-light">
+                "Don't try to impress, just be impressive."
+              </li>
+              <li className="text-lg ml-12 font-light">
+                I have unlimited energy for Engineering, Design and
+                Finance.
+              </li>
+            </ul>
           </div>
-        </header>
-        <div className="py-10 flex flex-col w-[95%] md:w-3/5 lg:w-1/2 xl:w-1/3">
-          <h1 className="text-2xl silka-bold text-gray-900">BIO</h1>
-          <p className="mt-4 text-xl silka-regular text-[#363636]">
-            I&apos;m working on{' '}
-            <span className="text-xl silka-semibold text-gray-900">
-              Garza
-            </span>
-            , a parent company that owns{' '}
-            <a
-              href="https://trydisperse.com?ref=maxaljadery.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xl silka-semibold text-gray-900 underline hover:opacity-90"
-            >
-              Disperse
-            </a>
-            , <span className="italic">stealth</span>,{` `}
-            <span className="italic">stealth</span>. My interests
-            include Software Engineering, Deep Learning, and Finance.
-          </p>
-          <div className="flex mt-12 flex-col space-y-4">
-            <h2 className="text-sm silka-semibold text-gray-600">
-              TWITTER THREADS
+          <div className="flex flex-col mt-20">
+            <h2 className="font-bold text-[#363636] text-2xl">
+              Tools I'm Highly Proficient At
             </h2>
-            <div className="flex flex-col space-y-2">
-              {data.threads.length == 0 ? (
-                <div className="p-8 rounded-lg border border-dashed flex flex-col justify-center items-center">
-                  <div className="p-2 rounded-full bg-[#E0ECF5]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="#1D9BF0"
-                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-                      />
-                    </svg>
-                  </div>
-                  <p className="text-2xl mt-4 text-center text-[#363636] silka-bold">
-                    No Twitter Threads Yet...
-                  </p>
-                  <span className="text-xs text-center silka-regular text-gray-500 mt-2">
-                    I will be writing more in the future about product
-                    led growth, growing a small startup, engineering,
-                    finance, and deep learning.
-                  </span>
-                </div>
-              ) : (
-                <>
-                  {data.threads.map((thread: any, index: number) => {
-                    return (
-                      <a
-                        key={index}
-                        href={thread?.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className=""
-                      >
-                        {thread?.title}
-                      </a>
-                    );
-                  })}
-                </>
-              )}
-            </div>
-          </div>
-          <div className="mt-12 flex flex-col space-y-4">
-            <h2 className="text-sm silka-semibold text-gray-600">
-              BLOG POSTS
-            </h2>
-            <div className="flex flex-col space-y-2">
-              {data.blog_posts.length == 0 ? (
-                <div className="p-8 rounded-lg border border-dashed flex flex-col justify-center items-center">
-                  <div className="p-2 rounded-full bg-[#F5EFEF]">
-                    <Image
-                      src="/books.png"
-                      alt="stack of books"
-                      width={20}
-                      height={20}
+            <div className="mt-5 flex flex-row flex-wrap">
+              {tools.map((tool: any, index: number) => {
+                return (
+                  <a
+                    href={tool.link}
+                    target="_blank"
+                    rel="noopenner noreferrer"
+                    className="p-5"
+                  >
+                    <img
+                      className="h-[40px] rounded"
+                      src={tool.image}
+                      key={index}
                     />
-                  </div>
-                  <p className="text-2xl mt-4 text-center text-[#363636] silka-bold">
-                    No Blog Posts Yet...
-                  </p>
-                  <span className="text-xs text-center silka-regular text-gray-500 mt-2">
-                    I will be writing more blog posts in the future,
-                    these blog post witll be on Slack and I will just
-                    share my general ideas about startups, deep
-                    learning and finance more in depth.
-                  </span>
-                </div>
-              ) : (
-                <>
-                  {data.blog_posts.map((post: any, index: number) => {
-                    return (
-                      <a
-                        key={index}
-                        href={post?.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className=""
-                      >
-                        {post?.title}
-                      </a>
-                    );
-                  })}
-                </>
-              )}
+                  </a>
+                );
+              })}
             </div>
+            <p className="text-center text-sm font-regular mt-1.5 text-gray-400">
+              {' '}
+              + some more
+            </p>
           </div>
         </div>
-      </div>
-    </PageHead>
+      </main>
+      <Footer />
+    </>
   );
 }
-
-export const getStaticProps = async () => {
-  return {
-    props: {
-      data: { threads, blog_posts },
-    },
-  };
-};
