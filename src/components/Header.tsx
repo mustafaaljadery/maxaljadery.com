@@ -13,11 +13,11 @@ export default function Header() {
   }, [router.isReady]);
 
   return (
-    <header className="w-full flex flex-col justify-center items-center mt-24">
-      <div className="w-1/2 flex flex-row justify-between items-between">
+    <header className="w-full flex flex-col justify-center items-center mt-12 md:mt-24">
+      <div className="w-[95%] md:w-3/4 xl:w-1/2 flex flex-row justify-between items-between">
         <Link
           href="/"
-          className="font-bold hover:opacity-90 text-2xl text-[#363636]"
+          className="font-bold hover:opacity-90 text-xl md:text-2xl text-[#363636]"
         >
           Max Aljadery
         </Link>
@@ -25,7 +25,7 @@ export default function Header() {
           <Link
             href="/"
             className={
-              'text-lg ' +
+              'md:text-lg ' +
               (pathname == '/'
                 ? 'font-medium text-gray-700'
                 : 'text-gray-500')
@@ -36,7 +36,7 @@ export default function Header() {
           <Link
             href="/work"
             className={
-              'text-lg ' +
+              'md:text-lg ' +
               (pathname == '/work'
                 ? 'font-medium text-gray-700'
                 : 'text-gray-500')
@@ -47,7 +47,7 @@ export default function Header() {
           <Link
             href="/writing"
             className={
-              'text-lg ' +
+              'md:text-lg ' +
               (pathname == '/writing'
                 ? 'font-medium text-gray-700'
                 : 'text-gray-500')

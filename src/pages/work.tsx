@@ -188,22 +188,22 @@ export default function Work() {
       </Head>
       <Header />
       <main className="flex flex-col w-full justify-center items-center">
-        <div className="w-1/2 flex flex-col">
+        <div className="w-[95%] md:w-3/4 xl:w-1/2 flex flex-col">
           <div className="flex flex-col mt-16">
             <h1 className="text-3xl font-bold text-[#363636]">
               Open Source
             </h1>
             <p className="mt-6 text-lg font-light text-gray-700">
-              I build software because it makes me better at
-              engineering.
+              I build stuff because it makes me better and it&apos;s
+              really fun.
             </p>
             <p className="mt-4 text-lg font-light text-gray-700">
               I tend to build things that are useful for me, and
               hopefully they will be useful for others.
             </p>
             <p className="mt-4 text-lg font-light text-gray-700">
-              If you find something is interesting, and want me to
-              build something with you,{' '}
+              If you find something interesting, or want to build
+              something together,{' '}
               <a
                 href="mailto:aljadery@usc.edu"
                 target="_blank"
@@ -223,7 +223,7 @@ export default function Work() {
                   className="w-full flex flex-col space-y-8"
                 >
                   <div className="flex w-full flex-row space-x-8">
-                    <div className="flex flex-col w-4/5">
+                    <div className="flex flex-col w-full md:w-4/5">
                       <h2 className="text-xl font-bold text-[#363636]">
                         {work?.name}
                       </h2>
@@ -231,7 +231,10 @@ export default function Work() {
                         {work?.tools.map(
                           (tool: any, index: number) => {
                             return (
-                              <div className="py-0.5 px-3">
+                              <div
+                                className="py-0.5 px-3"
+                                key={index}
+                              >
                                 <img
                                   alt={tool.alt}
                                   className="h-[16px] rounded"

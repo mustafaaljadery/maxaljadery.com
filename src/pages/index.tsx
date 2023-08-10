@@ -4,40 +4,41 @@ import Image from 'next/image';
 import Head from 'next/head';
 
 const tools = [
-  { link: '', image: '/tools/nodejs.png' },
-  { link: '', image: '/tools/typescript.png' },
-  { link: '', image: '/tools/cp.png' },
-  { link: '', image: '/tools/go.png' },
-  { link: '', image: '/tools/python.png' },
-  { link: '', image: '/tools/remix.png' },
-  { link: '', image: '/tools/nextjs.png' },
-  { link: '', image: '/tools/react.png' },
-  { link: '', image: '/tools/svelte.png' },
-  { link: '', image: '/tools/tailwind.png' },
-  { link: '', image: '/tools/django.png' },
-  { link: '', image: '/tools/express.png' },
-  { link: '', image: '/tools/postgres.png' },
-  { link: '', image: '/tools/mysql.png' },
-  { link: '', image: '/tools/clickhouse.svg' },
-  { link: '', image: '/tools/aws.png' },
-  { link: '', image: '/tools/gc.png' },
-  { link: '', image: '/tools/fly.png' },
-  { link: '', image: '/tools/docker.png' },
-  { link: '', image: '/tools/redis.svg' },
-  { link: '', image: '/tools/pinecone.png' },
-  { link: '', image: '/tools/git.png' },
-  { link: '', image: '/tools/github.png' },
-  { link: '', image: '/tools/huggingface.png' },
-  { link: '', image: '/tools/langchain.png' },
-  { link: '', image: '/tools/prisma.svg' },
-  { link: '', image: '/tools/graphql.png' },
-  { link: '', image: '/tools/excel.png' },
-  { link: '', image: '/tools/pytorch.png' },
-  { link: '', image: '/tools/snowflake.png' },
-  { link: '', image: '/tools/figma.jpg' },
-  { link: '', image: '/tools/eth.png' },
-  { link: '', image: '/tools/sol.png' },
-  { link: '', image: '/tools/apt.png' },
+  { link: '', image: '/tools/nodejs.png', alt: 'NodeJS' },
+  { link: '', image: '/tools/typescript.png', alt: 'TypeScript' },
+  { link: '', image: '/tools/cp.png', alt: 'C++' },
+  { link: '', image: '/tools/go.png', alt: 'Go' },
+  { link: '', image: '/tools/python.png', alt: 'Python' },
+  { link: '', image: '/tools/remix.png', alt: 'Remix' },
+  { link: '', image: '/tools/nextjs.png', alt: 'NextJS' },
+  { link: '', image: '/tools/react.png', alt: 'React' },
+  { link: '', image: '/tools/svelte.png', alt: 'Svelte' },
+  { link: '', image: '/tools/tailwind.png', alt: 'Tailwind' },
+  { link: '', image: '/tools/django.png', alt: 'Django' },
+  { link: '', image: '/tools/express.png', alt: 'Express' },
+  { link: '', image: '/tools/postgres.png', alt: 'PostgreSQL' },
+  { link: '', image: '/tools/mysql.png', alt: 'MySQL' },
+  { link: '', image: '/tools/clickhouse.svg', alt: 'ClickHouse' },
+  { link: '', image: '/tools/socketio.png', alt: 'SocketIO' },
+  { link: '', image: '/tools/aws.png', alt: 'AWS' },
+  { link: '', image: '/tools/gc.png', alt: 'Google Cloud' },
+  { link: '', image: '/tools/fly.png', alt: 'Fly' },
+  { link: '', image: '/tools/docker.png', alt: 'Docker' },
+  { link: '', image: '/tools/redis.svg', alt: 'Redis' },
+  { link: '', image: '/tools/pinecone.png', alt: 'Pinecone' },
+  { link: '', image: '/tools/git.png', alt: 'Git' },
+  { link: '', image: '/tools/github.png', alt: 'GitHub' },
+  { link: '', image: '/tools/huggingface.png', alt: 'HuggingFace' },
+  { link: '', image: '/tools/langchain.png', alt: 'LangChain' },
+  { link: '', image: '/tools/prisma.svg', alt: 'Prisma' },
+  { link: '', image: '/tools/graphql.png', alt: 'GraphQL' },
+  { link: '', image: '/tools/excel.png', alt: 'Excel' },
+  { link: '', image: '/tools/pytorch.png', alt: 'PyTorch' },
+  { link: '', image: '/tools/snowflake.png', alt: 'Snowflake' },
+  { link: '', image: '/tools/figma.jpg', alt: 'Figma' },
+  { link: '', image: '/tools/eth.png', alt: 'Ethereum' },
+  { link: '', image: '/tools/sol.png', alt: 'Solana' },
+  { link: '', image: '/tools/apt.png', alt: 'Aptos' },
 ];
 
 export default function Home() {
@@ -48,7 +49,7 @@ export default function Home() {
       </Head>
       <Header />
       <main className="flex flex-col mt-14 justify-center items-center w-full">
-        <div className="w-1/2 flex flex-col">
+        <div className="w-[95%] md:w-3/4 xl:w-1/2 flex flex-col">
           <div className="flex flex-row space-x-4">
             <Image
               src="/mustafa.jpg"
@@ -130,7 +131,8 @@ export default function Home() {
                 week.&quot; Time is the denominator.
               </li>
               <li className="text-lg ml-12 font-light">
-                &quot;Don't try to impress, just be impressive.&quot;
+                &quot;Don&apos;t try to impress, just be
+                impressive.&quot;
               </li>
               <li className="text-lg ml-12 font-light">
                 I have unlimited energy for research, engineering, and
@@ -145,11 +147,11 @@ export default function Home() {
             <div className="mt-6 flex flex-row flex-wrap">
               {tools.map((tool: any, index: number) => {
                 return (
-                  <div className="p-5">
+                  <div className="p-5" key={index}>
                     <img
-                      className="h-[32px] rounded"
+                      className="h-[24px] md:h-[32px] rounded"
+                      alt={tool.alt || ''}
                       src={tool.image}
-                      key={index}
                     />
                   </div>
                 );
