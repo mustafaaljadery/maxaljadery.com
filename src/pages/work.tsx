@@ -20,7 +20,7 @@ const works = [
     name: 'CambrianML',
     snippet: 'Web app to interact with arXiv better.',
     description:
-      'Cambrian is a web appilcation that allows you to get the most out of any arXiv paper. It allows to chat with papers, search papers, send them to friends, and share your papers publically.',
+      'Cambrian is a web application that allows you to get the most out of any arXiv paper. It allows you to chat with papers, search for papers, send them to friends, and share your papers publically.',
     link: 'https://cambrianml.org/',
     github: '',
     image: '',
@@ -35,7 +35,7 @@ const works = [
     name: 'Fine-tuning LLaMA with LoRA',
     snippet: 'I fine-tuned LLaMA with LoRA on a sentiment task.',
     description:
-      'I took the contents of a huggingface Twitter sentiment dataset and fine-tuned LLaMA with LoRA on it. I use LoRA to fine-tune the model for training efficiency.',
+      'I took the contents of a HuggingFace Twitter sentiment dataset and fine-tuned LLaMA with LoRA on it. I use LoRA to fine-tune the model for training efficiency.',
     link: '',
     github: 'https://github.com/mustafaaljadery/lora-fine-tune',
     image: '',
@@ -49,7 +49,7 @@ const works = [
     name: 'Deep NN in NumPy',
     snippet: 'I train a deep neural network in NumPy.',
     description:
-      'Training a neural network using PyTorch is easy, all of the primatives are given to you, but what if you had to implement it from scratch? I did just that, I implemented a deep neural network in NumPy.',
+      'Training a neural network using PyTorch is easy, all of the primitives are given to you, but what if you had to implement it from scratch? I did just that, I implemented a deep neural network in NumPy.',
     link: '',
     github: 'https://github.com/mustafaaljadery/deep-nn-scratch',
     image: '',
@@ -59,7 +59,7 @@ const works = [
     name: 'Open-Source Chat UI',
     snippet: 'I created the ChatGPT UI and made it open-source.',
     description:
-      'I thought it was cool if I made the ChatGPT UI open-source. Moreover, it would give me more experience with streaming words as they come from the OpenAI api, and optimization in storing/sharing chats.',
+      'I thought it was cool if I made the ChatGPT UI open-source. Moreover, it would give me more experience with streaming words as they come from the OpenAI API, and optimization in storing/sharing chats.',
     link: 'https://chat.maxaljadery.com',
     github: 'https://github.com/mustafaaljadery/chat-ui',
     image: '',
@@ -73,7 +73,7 @@ const works = [
     name: 'Essay Embedding Search',
     snippet: 'Search through Paul Graham Essays using embeddings.',
     description:
-      'I created a python script that allows you to search for any phrase in Paul Graham Essays. It uses embeddings to find the most similar essay to your query. I use ChromaDB as the embeddings database.',
+      "I created a Python script that allows you to search for any phrase in Paul Graham's Essays. It uses embeddings to find the most similar essay to your query. I use ChromaDB as the embedding database.",
     link: '',
     github:
       'https://github.com/mustafaaljadery/paul-graham-essays-search',
@@ -88,7 +88,7 @@ const works = [
     name: 'Collaborative Text Editor',
     snippet: 'Work with other people in a single text editor.',
     description:
-      'I created a collaborative text editor using NextJS and SocketIO. It allows you to work with other people in a single text editor. I built this to further my understanding of sockets in a real-time application. Worked a many optimizations as well.',
+      'I created a collaborative text editor using NextJS and SocketIO. It allows you to work with other people in a single text editor. I built this to further my understanding of sockets in a real-time application. Worked many optimizations as well.',
     link: '',
     github:
       'https://github.com/mustafaaljadery/collaborative-texteditor',
@@ -104,7 +104,7 @@ const works = [
     name: 'Cybersyn Data Visualization',
     snippet: 'I created a BI tool for data visualization.',
     description:
-      'I built this BI tool to show the power of the Snowflake Data Marketplace. It allows to go grab any dataset and manipulate it such that you can built your own app on top of it. It is similar to the AppStore but for data. Also Cybersyn is really cool.',
+      'I built this BI tool to show the power of the Snowflake Data Marketplace. It allows you to go grab any dataset and manipulate it such that you can build your app on top of it. It is similar to the AppStore but for data. Also, Cybersyn is cool.',
     link: 'https://cybersyn.maxaljadery.com',
     github: 'https://github.com/mustafaaljadery/cybersyn',
     image: '',
@@ -118,7 +118,7 @@ const works = [
     name: 'AI Blog Generator',
     snippet: 'Web application to generate SEO blog articles',
     description:
-      'I created this because I wanted to see if LLM can create SEO optimized blog articles. The theory behind is this if someone is starting a new startup, they can rank for keywords with low KD on google and basically get really cheap traffic.',
+      'I created this because I wanted to see if LLM can create SEO-optimized blog articles. The theory behind it is if someone is starting a new startup, they can rank for keywords with low KD on Google and basically get cheap traffic.',
     link: 'https://blog.maxaljadery.com',
     github: 'https://github.com/mustafaaljadery/blog-generator',
     image: '',
@@ -155,7 +155,7 @@ const works = [
     name: 'Field Trip Records Front-End',
     snippet: 'Front-end site for FTR record label.',
     description:
-      'I created the front-end site for FTR record label. I created it using NextJS and Framer Motion. I also used TailwindCSS for styling. I used Vercel for hosting.',
+      'I created the front-end site for the FTR record label. I created it using NextJS and Framer Motion. I also used TailwindCSS for styling. I used Vercel for hosting.',
     link: 'https://fieldtriprecords.vercel.app',
     github:
       'https://github.com/mustafaaljadery/Field-Trip-Records-Website',
@@ -171,7 +171,7 @@ const works = [
     name: 'Randomization Experiment Interface',
     snippet: 'Control trial randomization',
     description:
-      'A script to perform randomization for experiments. It randomly assigns different testing groups and calculates regression p-values as interface.',
+      'A script to perform randomization for experiments. It randomly assigns different testing groups and calculates regression p-values as an interface.',
     link: '',
     github:
       'https://github.com/mustafaaljadery/Randomization-Interface-for-Experiment-Design',
@@ -199,10 +199,10 @@ export default function Work() {
             </p>
             <p className="mt-4 text-lg font-light text-gray-700">
               I tend to build things that are useful for me, and
-              hopefully they will be useful for others.
+              hopefully, they will be useful for others.
             </p>
             <p className="mt-4 text-lg font-light text-gray-700">
-              If you find something interesting, or want to build
+              If you find something interesting or want to build
               something together,{' '}
               <a
                 href="mailto:aljadery@usc.edu"
