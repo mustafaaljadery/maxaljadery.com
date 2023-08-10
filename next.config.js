@@ -44,6 +44,11 @@ const nextConfig = {
           'https://github.com/mustafaaljadery/Randomization-Interface-for-Experiment-Design',
         permanent: true,
       },
+      {
+        source: '/field',
+        destination: 'https://fieldtriprecords.vercel.app/',
+        permanent: true,
+      },
     ];
   },
 };
