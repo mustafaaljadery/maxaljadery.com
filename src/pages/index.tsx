@@ -13,6 +13,7 @@ const tools = [
   { link: '', image: '/tools/nextjs.png' },
   { link: '', image: '/tools/react.png' },
   { link: '', image: '/tools/svelte.png' },
+  { link: '', image: '/tools/tailwind.png' },
   { link: '', image: '/tools/django.png' },
   { link: '', image: '/tools/express.png' },
   { link: '', image: '/tools/postgres.png' },
@@ -97,7 +98,7 @@ export default function Home() {
               things I care about.
             </p>
             <p className="mt-6 text-xl text-gray-500 font-light">
-              My current interests are{' '}
+              My interests are{' '}
               <span className="font-medium text-[#363636]">AI</span>,{' '}
               <span className="font-medium text-[#363636]">
                 Systems
@@ -115,7 +116,7 @@ export default function Home() {
             </p>
             <ul className="mt-5 list-disc flex flex-col space-y-4">
               <li className="text-lg ml-12 font-light">
-                I'm extremely competitive,{' '}
+                I&apos;m extremely competitive,{' '}
                 <span className="italic">
                   I will run through walls to succeed
                 </span>
@@ -125,42 +126,36 @@ export default function Home() {
                 I take work very seriously.
               </li>
               <li className="text-lg ml-12 font-light">
-                I'm "done by noon," not "by end of week." Time is the
-                denominator.
+                I&apos;m &quot;done by noon,&quot; not &quot;end of
+                week.&quot; Time is the denominator.
               </li>
               <li className="text-lg ml-12 font-light">
-                "Don't try to impress, just be impressive."
+                &quot;Don't try to impress, just be impressive.&quot;
               </li>
               <li className="text-lg ml-12 font-light">
-                I have unlimited energy for Engineering, Design and
-                Finance.
+                I have unlimited energy for research, engineering, and
+                design.
               </li>
             </ul>
           </div>
           <div className="flex flex-col mt-20">
             <h2 className="font-bold text-[#363636] text-2xl">
-              Tools I'm Highly Proficient At
+              Highly Proficient At
             </h2>
-            <div className="mt-5 flex flex-row flex-wrap">
+            <div className="mt-6 flex flex-row flex-wrap">
               {tools.map((tool: any, index: number) => {
                 return (
-                  <a
-                    href={tool.link}
-                    target="_blank"
-                    rel="noopenner noreferrer"
-                    className="p-5"
-                  >
+                  <div className="p-5">
                     <img
-                      className="h-[40px] rounded"
+                      className="h-[32px] rounded"
                       src={tool.image}
                       key={index}
                     />
-                  </a>
+                  </div>
                 );
               })}
             </div>
-            <p className="text-center text-sm font-regular mt-1.5 text-gray-400">
-              {' '}
+            <p className="text-center text-sm font-regular mt-2 text-gray-400">
               + some more
             </p>
           </div>

@@ -25,7 +25,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="w-full flex flex-col justify-center items-center mt-24 mb-24">
+    <footer className="w-full flex flex-col justify-center items-center mt-28 mb-24">
       <div className="w-1/2 flex flex-col space-y-3">
         {links.map((value: any, index: number) => {
           return (
