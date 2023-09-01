@@ -4,6 +4,26 @@ import Head from 'next/head';
 
 const works = [
   {
+    name: "TinyGrad Docs", 
+    snippet: "Wrote docs and examples for Tinygrad.",
+    description: "I wrote and tested an example of every function in the Tensor and NN libraries for Tinygrad. I wrote all of the docs and examples on how to use the library on MNIST and more. Tinygrad is a ML framework that is focused on making it really easy to build a model. It's also there to provide optimizations for inference but those come with some tradeoffs.", 
+    link: "https://tinygrad.vercel.app",
+    github: "https://github.com/mustafaaljadery/tinydocs",
+    image: "",
+    tools: [
+      { image: '/tools/nodejs.png', alt: 'NodeJS Image' },
+      { image: '/tools/apt.png', alt: 'Aptos Logo' },
+    ],
+  },{
+      name: "Little book of DL", 
+    snippet: "Summarizing all of high level Deep Learning.",
+    description: "I wrote a summary of all of the high level concepts of deep learning. I think this is really important because it gives a fundamental, first-principle understanding of everything that is going on in Deep Learning.", 
+    link: "",
+    github: "https://github.com/mustafaaljadery/little-book-of-dl",
+    image: "",
+    tools: []
+  },
+  {
     name: 'NPM Library AptosJS',
     snippet: 'NodeJS library to interact with the Aptos Blockchain.',
     description:
