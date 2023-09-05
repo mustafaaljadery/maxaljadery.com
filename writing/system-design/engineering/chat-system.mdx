@@ -1,0 +1,35 @@
+# Design a Chat System
+
+## Functional Requirements
+- Ability to send and receive messages to/from other users or to a group of users.
+- You want to not only be able to send messages but images and videos as well.
+
+## Non-functional Requirements
+- The system should be highly consistent; users should be able to see the same chat history on all their devices.
+- The system should be highly available.
+- Chat latency should be low.
+
+## High-level Design
+
+<img src="/system-design/chat-system-highlevel.png" />
+
+## Detailed Design
+
+<img src="/system-design/chat-system-deep-dive.png" />
+
+### Database
+- We store the data using cassandra. It's great for horizontal scaling and applications with large write data.
+
+### Notification System
+- If the user is not connected using a websocket, we can send a push notification to the user's device.
+
+## Tradeoffs, Bottlenecks, and Summary
+
+### Tradeoffs
+- Cassandra is great but it's not as consistent as a relational database. This also adds complexity to the system when you are trying to scale horizontally.
+
+### Bottlenecks
+- High throughput of messages can be a bottleneck. We add the message queue to help with this but if there is a huge number of messages, then the messages make take a little longer to propagate.
+
+### Summary
+We designed a chat system that allows users to send messages to other users or groups of users. We used Cassandra to store the data and used a notification system to notify users of new messages.

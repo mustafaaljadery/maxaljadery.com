@@ -1,0 +1,48 @@
+# Design a URL Shortener
+
+## Functional Requirements
+- Allow users to enter a URL and get a shortened version of it.
+- When users access a shortened URL, our service should redirect them to the original link. 
+- We should track analyics on the number of clicks/ redirects that each shortened URL gets.
+
+## Non-functional Requirements
+- The system should be highly available. 
+- The redirection should happen in real-time with minimal latency.
+- Shortened links should not be guessable (not predictable).
+- The links should be unique.
+
+
+## Back of Envelope Calculations
+- Traffic: 500M new URLs per month
+- Write to Read Ratio: 1:100
+- Storage: 500M * 100B = 50B URLs
+- Bandwidth: 500M * 100B / 30 days / 24 hours / 3600 seconds = ~20K URLs per second
+- Memory: 50B * 6 bytes = 300GB
+
+## High-Level Design
+
+<img src="/system-design/url-shortener-highlevel.png"/>
+
+- We want to be able to track analytics as well. 
+
+## Detailed Design
+
+<img src="/system-design/url-shortener-deep-dive.png"/>
+
+## Check before collision
+- It is really important that we don't have any collisions, you want to check if there are any before anything. If the DBs are sharded you can run queries in parallel which is good for speed.
+
+### More info
+- Permanent redirects, stored as a cache in the user's browser which makes it a lot faster in subsequent requests.
+- Temp redirects, allows you to track analytics such as the number of clicks and more.
+
+## Tradeoffs, Bottlenecks, and Summary
+
+### Tradeoffs
+- We use a redis cache to store the mappings of the shortened URLs to the original URLs. This is great because storing on memory is really fast, however we want to backup our data to a persistent server because it's really important.
+
+### Bottlenecks
+- There might be problems with our hash functions. It might have some collisions which can affect our system if a lot of people use it. 
+
+### Summary
+- We design a URL shortener that allows users to enter a URL and get a shortened version of it. When users access a shortened URL, our service should redirect them to the original link. We should track analytics on the number of clicks/ redirects that each shortened URL gets.
