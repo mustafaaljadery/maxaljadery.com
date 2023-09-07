@@ -31,7 +31,7 @@ const tools = [
   { link: '', image: '/tools/huggingface.png', alt: 'HuggingFace' },
   { link: '', image: '/tools/langchain.png', alt: 'LangChain' },
   { link: '', image: '/tools/prisma.svg', alt: 'Prisma' },
-  { link: '', image: '/tools/graphql.png', alt: 'GraphQL' },
+//  { link: '', image: '/tools/graphql.png', alt: 'GraphQL' },
   { link: '', image: '/tools/excel.png', alt: 'Excel' },
   { link: '', image: '/tools/pytorch.png', alt: 'PyTorch' },
   { link: '', image: '/tools/snowflake.png', alt: 'Snowflake' },
