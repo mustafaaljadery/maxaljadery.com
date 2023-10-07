@@ -3,6 +3,19 @@ import Header from '@/components/Header';
 import Head from 'next/head';
 
 const works = [
+    {
+    name: "Augment ML", 
+    snippet: "Multi-modal labeling and RLHF tagging.",
+    description: "An open-source infrastructure for labeling multimodal data while enabling RLHF tagging and augmenting your existing training data at no cost.", 
+    link: "https://augmentml.org",
+    github: "",
+    image: "",
+    tools: [
+      { image: '/tools/nodejs.png', alt: 'NodeJS Image' },
+      { image: '/tools/nextjs.png', alt: 'NextJS Logo' },
+       { image: '/tools/python.png', alt: 'Python' },
+    ],
+  },
   {
     name: "Tinygrad Docs", 
     snippet: "Wrote docs and examples for Tinygrad.",
