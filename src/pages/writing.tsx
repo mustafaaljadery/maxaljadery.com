@@ -5,6 +5,11 @@ import Link from 'next/link';
 
 const research = [
   {
+    name: "The Path Forward: A Primer for Reinforcement Learning", 
+    description: "A complete textbook on reinforcement learning with topics starting from decision trees to deep reinforcement learning.", 
+    link: "/research/rl.pdf"
+  },
+  {
     name: 'Single-Variable & Multi-Variable Calculus Textbooks',
     description:
       'Authored three textbooks teaching single variable integral and differential calculus, and multi-variable calculus.',
