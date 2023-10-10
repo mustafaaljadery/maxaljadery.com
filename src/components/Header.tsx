@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 export default function Header() {
-  const [pathname, setPathname] = useState<string>('');
+  const [pathname, setPathname] = useState<string>("");
   const router = useRouter();
 
   useEffect(() => {
@@ -19,16 +19,14 @@ export default function Header() {
           href="/"
           className="font-bold hover:opacity-90 text-xl md:text-2xl text-[#363636]"
         >
-          Max Aljadery
+          Mustafa Aljadery
         </Link>
         <div className="flex flex-row my-auto space-x-5">
           <Link
             href="/"
             className={
-              'md:text-lg ' +
-              (pathname == '/'
-                ? 'font-medium text-gray-700'
-                : 'text-gray-500')
+              "md:text-lg " +
+              (pathname == "/" ? "font-medium text-gray-700" : "text-gray-500")
             }
           >
             home
@@ -36,10 +34,10 @@ export default function Header() {
           <Link
             href="/work"
             className={
-              'md:text-lg ' +
-              (pathname == '/work'
-                ? 'font-medium text-gray-700'
-                : 'text-gray-500')
+              "md:text-lg " +
+              (pathname == "/work"
+                ? "font-medium text-gray-700"
+                : "text-gray-500")
             }
           >
             work
@@ -47,10 +45,10 @@ export default function Header() {
           <Link
             href="/writing"
             className={
-              'md:text-lg ' +
-              (pathname == '/writing'
-                ? 'font-medium text-gray-700'
-                : 'text-gray-500')
+              "md:text-lg " +
+              (pathname == "/writing"
+                ? "font-medium text-gray-700"
+                : "text-gray-500")
             }
           >
             writing

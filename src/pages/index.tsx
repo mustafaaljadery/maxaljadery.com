@@ -1,44 +1,44 @@
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import Image from 'next/image';
-import Head from 'next/head';
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Image from "next/image";
+import Head from "next/head";
 
 const tools = [
-  { link: '', image: '/tools/nodejs.png', alt: 'NodeJS' },
-  { link: '', image: '/tools/typescript.png', alt: 'TypeScript' },
-  { link: '', image: '/tools/cp.png', alt: 'C++' },
-  { link: '', image: '/tools/go.png', alt: 'Go' },
-  { link: '', image: '/tools/python.png', alt: 'Python' },
-  { link: '', image: '/tools/remix.png', alt: 'Remix' },
-  { link: '', image: '/tools/nextjs.png', alt: 'NextJS' },
-  { link: '', image: '/tools/react.png', alt: 'React' },
-  { link: '', image: '/tools/svelte.png', alt: 'Svelte' },
-  { link: '', image: '/tools/tailwind.png', alt: 'Tailwind' },
-  { link: '', image: '/tools/django.png', alt: 'Django' },
-  { link: '', image: '/tools/express.png', alt: 'Express' },
-  { link: '', image: '/tools/postgres.png', alt: 'PostgreSQL' },
-  { link: '', image: '/tools/mysql.png', alt: 'MySQL' },
-  { link: '', image: '/tools/clickhouse.svg', alt: 'ClickHouse' },
-  { link: '', image: '/tools/socketio.png', alt: 'SocketIO' },
-  { link: '', image: '/tools/aws.png', alt: 'AWS' },
-  { link: '', image: '/tools/gc.png', alt: 'Google Cloud' },
-  { link: '', image: '/tools/fly.png', alt: 'Fly' },
-  { link: '', image: '/tools/docker.png', alt: 'Docker' },
-  { link: '', image: '/tools/redis.svg', alt: 'Redis' },
-  { link: '', image: '/tools/pinecone.png', alt: 'Pinecone' },
-  { link: '', image: '/tools/git.png', alt: 'Git' },
-  { link: '', image: '/tools/github.png', alt: 'GitHub' },
-  { link: '', image: '/tools/huggingface.png', alt: 'HuggingFace' },
-  { link: '', image: '/tools/langchain.png', alt: 'LangChain' },
-  { link: '', image: '/tools/prisma.svg', alt: 'Prisma' },
-//  { link: '', image: '/tools/graphql.png', alt: 'GraphQL' },
-  { link: '', image: '/tools/excel.png', alt: 'Excel' },
-  { link: '', image: '/tools/pytorch.png', alt: 'PyTorch' },
-  { link: '', image: '/tools/snowflake.png', alt: 'Snowflake' },
-  { link: '', image: '/tools/figma.jpg', alt: 'Figma' },
-  { link: '', image: '/tools/eth.png', alt: 'Ethereum' },
-  { link: '', image: '/tools/sol.png', alt: 'Solana' },
-  { link: '', image: '/tools/apt.png', alt: 'Aptos' },
+  { link: "", image: "/tools/nodejs.png", alt: "NodeJS" },
+  { link: "", image: "/tools/typescript.png", alt: "TypeScript" },
+  { link: "", image: "/tools/cp.png", alt: "C++" },
+  { link: "", image: "/tools/go.png", alt: "Go" },
+  { link: "", image: "/tools/python.png", alt: "Python" },
+  { link: "", image: "/tools/remix.png", alt: "Remix" },
+  { link: "", image: "/tools/nextjs.png", alt: "NextJS" },
+  { link: "", image: "/tools/react.png", alt: "React" },
+  { link: "", image: "/tools/svelte.png", alt: "Svelte" },
+  { link: "", image: "/tools/tailwind.png", alt: "Tailwind" },
+  { link: "", image: "/tools/django.png", alt: "Django" },
+  { link: "", image: "/tools/express.png", alt: "Express" },
+  { link: "", image: "/tools/postgres.png", alt: "PostgreSQL" },
+  { link: "", image: "/tools/mysql.png", alt: "MySQL" },
+  { link: "", image: "/tools/clickhouse.svg", alt: "ClickHouse" },
+  { link: "", image: "/tools/socketio.png", alt: "SocketIO" },
+  { link: "", image: "/tools/aws.png", alt: "AWS" },
+  { link: "", image: "/tools/gc.png", alt: "Google Cloud" },
+  { link: "", image: "/tools/fly.png", alt: "Fly" },
+  { link: "", image: "/tools/docker.png", alt: "Docker" },
+  { link: "", image: "/tools/redis.svg", alt: "Redis" },
+  { link: "", image: "/tools/pinecone.png", alt: "Pinecone" },
+  { link: "", image: "/tools/git.png", alt: "Git" },
+  { link: "", image: "/tools/github.png", alt: "GitHub" },
+  { link: "", image: "/tools/huggingface.png", alt: "HuggingFace" },
+  { link: "", image: "/tools/langchain.png", alt: "LangChain" },
+  { link: "", image: "/tools/prisma.svg", alt: "Prisma" },
+  //  { link: '', image: '/tools/graphql.png', alt: 'GraphQL' },
+  { link: "", image: "/tools/excel.png", alt: "Excel" },
+  { link: "", image: "/tools/pytorch.png", alt: "PyTorch" },
+  { link: "", image: "/tools/snowflake.png", alt: "Snowflake" },
+  { link: "", image: "/tools/figma.jpg", alt: "Figma" },
+  { link: "", image: "/tools/eth.png", alt: "Ethereum" },
+  { link: "", image: "/tools/sol.png", alt: "Solana" },
+  { link: "", image: "/tools/apt.png", alt: "Aptos" },
 ];
 
 export default function Home() {
@@ -60,11 +60,9 @@ export default function Home() {
             />
             <div className="flex flex-col space-y-1 my-auto">
               <h1 className="font-bold text-xl text-[#363636]">
-                Mustafa (Max) Aljadery
+                Mustafa Aljadery
               </h1>
-              <p className="font-light text-gray-500">
-                I like to build!
-              </p>
+              <p className="font-light text-gray-500">I like to build!</p>
             </div>
           </div>
           <div className="mt-12 flex flex-col">
@@ -72,52 +70,35 @@ export default function Home() {
               <span className="italic font-medium text-[#363636]">
                 Software Engineering
               </span>
-              ,{' '}
-              <span className="italic font-medium text-[#363636]">
-                ML
-              </span>
-              ,{' '}
-              <span className="italic font-medium text-[#363636]">
-                Design
-              </span>
-              , and{' '}
-              <span className="italic font-medium text-[#363636]">
-                Finance
-              </span>
+              , <span className="italic font-medium text-[#363636]">ML</span>,{" "}
+              <span className="italic font-medium text-[#363636]">Design</span>,
+              and{" "}
+              <span className="italic font-medium text-[#363636]">Finance</span>
               .
             </p>
             <p className="mt-8 text-xl text-gray-500 font-light">
               <span className="text-[#363636] font-semibold">
                 Difficult Scientific
-              </span>{' '}
-              and{' '}
+              </span>{" "}
+              and{" "}
               <span className="text-[#363636] font-semibold">
                 Engineering Problems
-              </span>{' '}
-              are the{' '}
-              <span className="text-[#363636] font-bold">ONLY</span>{' '}
+              </span>{" "}
+              are the <span className="text-[#363636] font-bold">ONLY</span>{" "}
               things I care about.
             </p>
             <p className="mt-6 text-xl text-gray-500 font-light">
-              My interests are{' '}
-              <span className="font-medium text-[#363636]">AI</span>,{' '}
-              <span className="font-medium text-[#363636]">
-                Systems
-              </span>
-              , and{' '}
-              <span className="font-medium text-[#363636]">
-                Hard Tech
-              </span>
-              .
+              My interests are{" "}
+              <span className="font-medium text-[#363636]">AI</span>,{" "}
+              <span className="font-medium text-[#363636]">Systems</span>, and{" "}
+              <span className="font-medium text-[#363636]">Hard Tech</span>.
             </p>
           </div>
           <div className="flex flex-col mt-20">
-            <p className="font-bold text-[#363636] text-2xl">
-              About Me
-            </p>
+            <p className="font-bold text-[#363636] text-2xl">About Me</p>
             <ul className="mt-5 list-disc flex flex-col space-y-4">
               <li className="text-lg ml-12 font-light">
-                I&apos;m extremely competitive,{' '}
+                I&apos;m extremely competitive,{" "}
                 <span className="italic">
                   I will run through walls to succeed
                 </span>
@@ -127,19 +108,18 @@ export default function Home() {
                 I take work very seriously.
               </li>
               <li className="text-lg ml-12 font-light">
-                I&apos;m &quot;done by noon,&quot; not &quot;end of
-                week.&quot; Time is the denominator.
+                I&apos;m &quot;done by noon,&quot; not &quot;end of week.&quot;
+                Time is the denominator.
               </li>
               <li className="text-lg ml-12 font-light">
-                &quot;Don&apos;t try to impress, just be
-                impressive.&quot;
+                &quot;Don&apos;t try to impress, just be impressive.&quot;
               </li>
               <li className="text-lg ml-12 font-light">
-                I have unlimited energy for research, engineering, and
-                design.
+                I have unlimited energy for research, engineering, and design.
               </li>
             </ul>
           </div>
+          {/*
           <div className="flex flex-col mt-20">
             <h2 className="font-bold text-[#363636] text-2xl">
               Highly Proficient At
@@ -150,7 +130,7 @@ export default function Home() {
                   <div className="p-5" key={index}>
                     <img
                       className="h-[24px] md:h-[32px] rounded"
-                      alt={tool.alt || ''}
+                      alt={tool.alt || ""}
                       src={tool.image}
                     />
                   </div>
@@ -161,6 +141,7 @@ export default function Home() {
               + some more
             </p>
           </div>
+            */}
         </div>
       </main>
       <Footer />
