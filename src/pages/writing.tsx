@@ -35,7 +35,7 @@ const methods = [
     name: "Decomposing Monosemanticity using Dictionary Learning Visualized",
     description:
       "A visualized explanation of the paper Towards Monosemanticity: Decomposing Language Models With Dictionary Learning.",
-    link: "/methods/decomposing-monosemanticity",
+    link: "/posts/decomposing-monosemanticity",
   },
 ];
 
