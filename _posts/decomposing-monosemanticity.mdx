@@ -44,6 +44,10 @@ Let's start with _monosemanticity_. Monosemanticity means having a single, unamb
 
 On the other hand, polysemanticity refers to something that has multiple meanings. There is some ambiguity as to what is meant when this word is referred to. If you have to look at context, it's polysemantic.
 
+<div className="mt-14 w-full flex flex-col justify-center items-center">
+  <img width={600} src="/images/polysemanticity.png" />
+</div>
+
 Next, _decomposing language models_. This refers to analyzing and breaking down large, complex AI models to understand how they work internally.
 
 Finally, _with dictionary learning_. Dictionary learning is a method in ML that is used to find representations in data. It's typically useful in sparse data - data where most of the values are zero but a rare value isn't. i.e [0,0,0,0,0,0,0,0,1,0,0,0,0]
@@ -197,6 +201,10 @@ Features are often connected by feature splitting - pure context features or tok
 Moreover, most of the features in a one-layer model can be interpreted as an action feature. A feature that incorporates information about behavior.
 
 A striking thing about features in general is that they appear in clusters. More features are developed in similar clusters as the total number of learned sparse features increases. This is referred to as feature splitting.
+
+<div className="mt-14 w-full flex flex-col justify-center items-center">
+  <img width={600} src="/images/clusters.png" />
+</div>
 
 The theory is that "true features" are clustered into sets of similar features, which the model puts in very tight superposition.
 
