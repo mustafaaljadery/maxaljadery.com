@@ -15,13 +15,11 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./src/*"],
-      "contentlayer/generated": ["./.contentlayer/generated"]
+      "@/*": ["./src/*"]
     }
   },
   "paths": {
-    "@/*": ["./src/*"],
-    "contentlayer/generated": ["./.contentlayer/generated"]
+    "@/*": ["./src/*"]
   },
   "include": [
     "next-env.d.ts",
