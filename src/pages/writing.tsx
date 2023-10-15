@@ -37,6 +37,11 @@ const methods = [
       "A visualized explanation of the paper Towards Monosemanticity: Decomposing Language Models With Dictionary Learning.",
     link: "/posts/decomposing-monosemanticity",
   },
+  {
+    name: "Concurrently Scraping & Tokenizing Wikipedia using GoLang",
+    description: "",
+    link: "/posts/scrape-wikipedia",
+  },
 ];
 
 interface WritingComponentProps {
