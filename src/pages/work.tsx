@@ -4,6 +4,16 @@ import Head from "next/head";
 
 const works = [
   {
+    name: "Scrape Wikipedia",
+    snippet: "Concurrently scrape wikipedia and tokenize the outputs.",
+    description:
+      "An open-source Wikipedia scraper using GoLang (for concurrency), and then tokenize those outputs using openai's tiktoken tokenizer.",
+    link: "",
+    github: "https://github.com/mustafaaljadery/wikipedia-scraper",
+    image: "",
+    tools: [{ image: "/tools/go.png", alt: "GoLang Image" }],
+  },
+  {
     name: "Monosemanticity",
     snippet: "A 80x faster visualization of feature activations.",
     description:
