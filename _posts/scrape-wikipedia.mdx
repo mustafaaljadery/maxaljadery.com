@@ -7,3 +7,11 @@ description:
 tags: ["GoLang", "Scraping", "Concurrency"]
 author: Mustafa Aljadery
 ---
+
+The motivations behind this is data processing for LLM training. Where do LLMs get data? How is the data processed? How is the data formatted so that it can read by these models?
+
+A huge datasource of LLM training is Wikipedia, which is the home to 6,800,000+ fact based articles.
+
+I create a concurrent scraper in GoLang that gets this data and processes it using OpenAI's tiktoken tokenizer, so that it can be fed to LLMs.
+
+## Design Doc
