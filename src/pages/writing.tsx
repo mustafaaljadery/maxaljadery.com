@@ -40,7 +40,7 @@ const methods = [
   {
     name: "Concurrently Scraping & Tokenizing Wikipedia using GoLang",
     description:
-      "A design doc on building a Wikipedia scraper and tokenizer using tiktoken in GoLang.",
+      "A design doc on building a Wikipedia scraper with concurrency and tokenizer with OpenAI's tiktoken in GoLang.",
     link: "/posts/scrape-wikipedia",
   },
 ];

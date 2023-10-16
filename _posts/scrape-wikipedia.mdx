@@ -8,10 +8,62 @@ tags: ["GoLang", "Scraping", "Concurrency"]
 author: Mustafa Aljadery
 ---
 
-The motivations behind this is data processing for LLM training. Where do LLMs get data? How is the data processed? How is the data formatted so that it can read by these models?
+The motivation behind this is data processing for LLM training. Where do LLMs get data? How is the data processed? How is the data formatted so that it can be read by these models?
 
-A huge datasource of LLM training is Wikipedia, which is the home to 6,800,000+ fact based articles.
+A huge data source of LLM training is Wikipedia, which is the home to 6,800,000+ fact-based articles.
 
-I create a concurrent scraper in GoLang that gets this data and processes it using OpenAI's tiktoken tokenizer, so that it can be fed to LLMs.
+I create a concurrent scraper in GoLang that gets this data and processes it using OpenAI's tiktoken tokenizer so that it can be fed to LLMs.
 
 ## Design Doc
+
+All of the code to the scraper can be viewed [here](https://github.com/mustafaaljadery/wikipedia-scraper).
+
+Scraping the data -
+
+<div className="mt-14 w-full flex flex-col justify-center items-center">
+  <img width={600} src="/images/scrape.png" />
+</div>
+
+The fundamental design of the system is that we start with a single Wikipedia URL.
+
+That single Wikipedia url links to other URLs, and most likely those other URLs are Wikipedia URLs as well.
+
+We take those links and add them to a queue. That queue is based on the links that we are going to process next.
+
+We repeat this cycle until we have found all the possible Wikipedia URLs and scraped them.
+
+The scraper, on the other hand, takes the data of the important tags and stores them in a JSON file. The JSON file is an array of objects with the tag and text data in the tag, for each object.
+
+This process is repeated until the convergence of all articles.
+
+## Concurrency
+
+As of right now, the only thing processing concurrently is extraction and adding to the queue. Which is great.
+
+What really should be processed in parallel is the entire loop.
+
+To do these, we must ensure concurrent queues. To add concurrency to queues, we use locks.
+
+Locks within queues are like a queue within a queue. As soon as a lock is unlocked, then the next item in that queue can execute. Think of it as sync locks.
+
+## Tradeoffs
+
+The biggest trade-off right now is with concurrency.
+
+Because we are not processing the articles concurrently, each article must complete both extraction and adding links to the queue (that is processed in parallel), before going to the next.
+
+That's a costly trade-off.
+
+Moreover, the only trade-off of processing the articles concurrently is added complexity and load on Wikipedia.
+
+If this was a scraper I wanted to use in production, then I would add concurrent scraping.
+
+## Discussion
+
+Something really important is data compression. This relates to the data format we want.
+
+To process these into a Transformer, then we should probably store them as tokens. Tokens are a heavily compressed form of the data.
+
+Furthermore, if we wanted to keep these stored as JSON or as TXT docs, we have two options. We can store these as the original documents in a cloud storage bucket like S3 of a NoSQL database.
+
+Although a NoSQL database will more than likely be more expensive, searching the documents, and data cleaning will be a lot easier.
