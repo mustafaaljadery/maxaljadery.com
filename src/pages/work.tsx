@@ -4,6 +4,29 @@ import Head from "next/head";
 
 const works = [
   {
+    name: "Anthropic Bedrock",
+    snippet: "SDKs to interact with Anthropic's models on AWS Bedrock.",
+    description:
+      "Typescript and python SDKs that perform all of AWS Bedrock auth and provide clean functions to interact with Anthropic's models on Bedrock.",
+    link: "https://www.anthropic-bedrock.com/",
+    github: "https://github.com/mustafaaljadery/anthropic-bedrock",
+    image: "",
+    tools: [
+      {
+        image: "/tools/nodejs.png",
+        alt: "NodeJS Image",
+      },
+      {
+        image: "/tools/nextjs.png",
+        alt: "NextJS Image",
+      },
+      {
+        image: "/tools/python.png",
+        alt: "Python Image",
+      },
+    ],
+  },
+  {
     name: "Scrape Wikipedia",
     snippet: "Concurrently scrape wikipedia and tokenize the outputs.",
     description:

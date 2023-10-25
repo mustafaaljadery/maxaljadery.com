@@ -5,6 +5,12 @@ import Link from "next/link";
 
 const academic_work = [
   {
+    name: "Design of Computer Networks",
+    description:
+      "A complete textbook on the design of computer networks. I discuss everything from network architecture to large scaling issues like concurrency and congrestion.",
+    link: "/research/networks.pdf",
+  },
+  {
     name: "The Path Forward: A Primer for Reinforcement Learning",
     description:
       "A complete textbook on reinforcement learning with topics starting from decision trees to deep reinforcement learning.",
