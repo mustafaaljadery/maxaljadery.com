@@ -261,6 +261,49 @@ const works = [
   },
 ];
 
+const models = [
+  {
+    name: "Decoder Only Transformer",
+    github_link:
+      "https://github.com/mustafaaljadery/models/blob/main/decoder-transformer.ipynb",
+  },
+  {
+    name: "Bigram Language Model",
+    github_link:
+      "https://github.com/mustafaaljadery/models/blob/main/bigram.ipynb",
+  },
+  {
+    name: "GRU",
+    github_link:
+      "https://github.com/mustafaaljadery/models/blob/main/gru.ipynb",
+  },
+  {
+    name: "LSTM",
+    github_link:
+      "https://github.com/mustafaaljadery/models/blob/main/lstm.ipynb",
+  },
+  {
+    name: "RNN",
+    github_link:
+      "https://github.com/mustafaaljadery/models/blob/main/rrn.ipynb",
+  },
+  {
+    name: "ResNet",
+    github_link:
+      "https://github.com/mustafaaljadery/models/blob/main/res-net.ipynb",
+  },
+  {
+    name: "VGG",
+    github_link:
+      "https://github.com/mustafaaljadery/models/blob/main/vgg-net.ipynb",
+  },
+  {
+    name: "AlexNet",
+    github_link:
+      "https://github.com/mustafaaljadery/models/blob/main/alex-net.ipynb",
+  },
+];
+
 export default function Work() {
   return (
     <>
@@ -295,7 +338,34 @@ export default function Work() {
               .
             </p>
           </div>
-          <div className="mt-20 flex flex-col space-y-8 w-full">
+        </div>
+        <div className="w-full py-16 bg-gray-50 mt-20 flex flex-col justify-center items-center">
+          <div className="w-[95%] md:w-3/4 xl:w-1/2 flex flex-col">
+            <h2 className="text-2xl font-semibold text-[#363636]">
+              ML paper reconstructions
+            </h2>
+            <p className="mt-3 text-sm text-gray-500">
+              I reconstruct papers and popular models from scratch in either
+              PyTorch or JAX.
+            </p>
+            <div className="mt-7 flex flex-row flex-wrap">
+              {models.map((value: any, index: number) => {
+                return (
+                  <a
+                    key={index}
+                    className="w-full sm:w-1/2 font-medium p-1.5 hover:underline text-[#363636]"
+                    href={value.github_link}
+                    target="_blank"
+                  >
+                    {value.name}
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+        <div className="w-[95%] mt-20 md:w-3/4 xl:w-1/2 flex flex-col">
+          <div className="flex flex-col space-y-8 w-full">
             {works.map((work: any, index: number) => {
               return (
                 <div key={index} className="w-full flex flex-col space-y-8">

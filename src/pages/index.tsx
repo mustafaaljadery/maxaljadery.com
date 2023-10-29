@@ -96,17 +96,11 @@ export default function Home() {
           </div>
           <div className="flex flex-col mt-20">
             <p className="font-semibold text-[#363636] text-2xl">About Me</p>
-            <ul className="mt-5 list-disc flex flex-col space-y-4">
-              <li className="text-lg ml-12 font-light">
-                I&apos;m extremely competitive.
-              </li>
-              <li className="text-lg ml-12 font-light">
-                I take work very seriously.
-              </li>
-              <li className="text-lg ml-12 font-light">
-                Time is the denominator.
-              </li>
-              <li className="text-lg ml-12 font-light">
+            <ul className="mt-5 list-disc flex flex-col font-regular text-gray-600 space-y-3">
+              <li className="text-lg ml-12">I&apos;m extremely competitive.</li>
+              <li className="text-lg ml-12">I take work very seriously.</li>
+              <li className="text-lg ml-12">Time is the denominator.</li>
+              <li className="text-lg ml-12">
                 &quot;Don&apos;t try to impress, just be impressive.&quot;
               </li>
             </ul>
