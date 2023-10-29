@@ -97,7 +97,9 @@ export default function Writing() {
       <main className="flex flex-col w-full justify-center items-center">
         <div className="w-[95%] md:w-3/4 xl:w-1/2 flex flex-col mt-16">
           <div className="w-full flex flex-col">
-            <h2 className="text-2xl font-bold text-[#363636]">Academic Work</h2>
+            <h2 className="text-3xl font-semibold text-[#363636]">
+              Academic Work
+            </h2>
             <div className="flex flex-col space-y-6 mt-8 w-full">
               {academic_work.map((research: any, index: number) => {
                 return <WritingComponent value={research} key={index} />;

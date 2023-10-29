@@ -271,7 +271,9 @@ export default function Work() {
       <main className="flex flex-col w-full justify-center items-center">
         <div className="w-[95%] md:w-3/4 xl:w-1/2 flex flex-col">
           <div className="flex flex-col mt-16">
-            <h1 className="text-3xl font-bold text-[#363636]">Open Source</h1>
+            <h1 className="text-3xl font-semibold text-[#363636]">
+              Open Source
+            </h1>
             <p className="mt-6 text-lg font-light text-gray-700">
               I build stuff because it makes me better and it&apos;s really fun.
             </p>

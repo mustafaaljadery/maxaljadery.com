@@ -68,21 +68,21 @@ export default function Home() {
           <div className="mt-12 flex flex-col">
             <p className="text-xl font-light text-gray-500">
               <span className="italic font-medium text-[#363636]">
-                Software Engineering
+                Software engineering
               </span>
               , <span className="italic font-medium text-[#363636]">ML</span>,{" "}
-              <span className="italic font-medium text-[#363636]">Design</span>,
+              <span className="italic font-medium text-[#363636]">design</span>,
               and{" "}
-              <span className="italic font-medium text-[#363636]">Finance</span>
+              <span className="italic font-medium text-[#363636]">finance</span>
               .
             </p>
             <p className="mt-8 text-xl text-gray-500 font-light">
               <span className="text-[#363636] font-semibold">
-                Difficult Scientific
+                Difficult scientific
               </span>{" "}
               and{" "}
               <span className="text-[#363636] font-semibold">
-                Engineering Problems
+                engineering problems
               </span>{" "}
               are the <span className="text-[#363636] font-bold">ONLY</span>{" "}
               things I care about.
@@ -90,32 +90,24 @@ export default function Home() {
             <p className="mt-6 text-xl text-gray-500 font-light">
               My interests are{" "}
               <span className="font-medium text-[#363636]">AI</span>,{" "}
-              <span className="font-medium text-[#363636]">Systems</span>, and{" "}
-              <span className="font-medium text-[#363636]">Hard Tech</span>.
+              <span className="font-medium text-[#363636]">systems</span>, and{" "}
+              <span className="font-medium text-[#363636]">finance</span>.
             </p>
           </div>
           <div className="flex flex-col mt-20">
-            <p className="font-bold text-[#363636] text-2xl">About Me</p>
+            <p className="font-semibold text-[#363636] text-2xl">About Me</p>
             <ul className="mt-5 list-disc flex flex-col space-y-4">
               <li className="text-lg ml-12 font-light">
-                I&apos;m extremely competitive,{" "}
-                <span className="italic">
-                  I will run through walls to succeed
-                </span>
-                .
+                I&apos;m extremely competitive.
               </li>
               <li className="text-lg ml-12 font-light">
                 I take work very seriously.
               </li>
               <li className="text-lg ml-12 font-light">
-                I&apos;m &quot;done by noon,&quot; not &quot;end of week.&quot;
                 Time is the denominator.
               </li>
               <li className="text-lg ml-12 font-light">
                 &quot;Don&apos;t try to impress, just be impressive.&quot;
-              </li>
-              <li className="text-lg ml-12 font-light">
-                I have unlimited energy for research, engineering, and design.
               </li>
             </ul>
           </div>
