@@ -17,7 +17,7 @@ export default function Header() {
       <div className="w-[95%] md:w-3/4 xl:w-1/2 flex flex-row justify-between items-between">
         <Link
           href="/"
-          className="font-regular hover:opacity-90 text-xl md:text-2xl text-[#363636]"
+          className="font-semibold hover:opacity-90 text-xl md:text-2xl text-[#363636]"
         >
           Mustafa Aljadery
         </Link>
@@ -25,33 +25,38 @@ export default function Header() {
           <Link
             href="/"
             className={
-              "md:text-base text-sm font-semibold " +
-              (pathname == "/" ? "font-medium text-[#363636]" : "text-gray-600")
+              "md:text-base text-sm font-light " +
+              (pathname == "/" ? "text-gray-600" : "text-gray-400")
             }
           >
-            HOME
+            Home
           </Link>
           <Link
             href="/work"
             className={
-              "text-sm md:text-base font-semibold " +
-              (pathname == "/work"
-                ? "font-medium text-[#363636]"
-                : "text-gray-600")
+              "text-sm md:text-base font-light " +
+              (pathname == "/work" ? "text-gray-600" : "text-gray-400")
             }
           >
-            WORK
+            Work
           </Link>
           <Link
             href="/writing"
             className={
-              "md:text-base text-sm font-semibold " +
-              (pathname == "/writing"
-                ? "font-medium text-[#363636]"
-                : "text-gray-600")
+              "md:text-base text-sm font-light " +
+              (pathname == "/writing" ? "text-gray-600" : "text-gray-400")
             }
           >
-            WRITING
+            Writing
+          </Link>
+          <Link
+            href="/design"
+            className={
+              "md:text-base text-sm font-light " +
+              (pathname == "/design" ? "text-gray-600" : "text-gray-400")
+            }
+          >
+            Design
           </Link>
           {/*
           <Link

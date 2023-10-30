@@ -45,7 +45,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Max Aljadery</title>
+        <title>Mustafa Aljadery</title>
       </Head>
       <Header />
       <main className="flex flex-col mt-14 justify-center items-center w-full">

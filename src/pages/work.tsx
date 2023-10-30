@@ -308,7 +308,7 @@ export default function Work() {
   return (
     <>
       <Head>
-        <title>Work - Max Aljadery</title>
+        <title>Work - Mustafa Aljadery</title>
       </Head>
       <Header />
       <main className="flex flex-col w-full justify-center items-center">
@@ -317,14 +317,14 @@ export default function Work() {
             <h1 className="text-3xl font-semibold text-[#363636]">
               Open Source
             </h1>
-            <p className="mt-6 text-lg font-light text-gray-700">
+            <p className="mt-6 text-base font-light text-gray-700">
               I build stuff because it makes me better and it&apos;s really fun.
             </p>
-            <p className="mt-4 text-lg font-light text-gray-700">
+            <p className="mt-4 text-base font-light text-gray-700">
               I tend to build things that are useful for me, and hopefully, they
               will be useful for others.
             </p>
-            <p className="mt-4 text-lg font-light text-gray-700">
+            <p className="mt-4 text-base font-light text-gray-700">
               If you find something interesting or want to build something
               together,{" "}
               <a

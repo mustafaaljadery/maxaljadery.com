@@ -91,7 +91,7 @@ export default function Writing() {
   return (
     <>
       <Head>
-        <title>Writing - Max Aljadery</title>
+        <title>Writing - Mustafa Aljadery</title>
       </Head>
       <Header />
       <main className="flex flex-col w-full justify-center items-center">

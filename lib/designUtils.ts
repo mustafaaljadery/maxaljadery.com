@@ -20,7 +20,7 @@ type Page = {
   content: string;
 };
 
-const POSTS_PATH = join(process.cwd(), "_posts");
+const POSTS_PATH = join(process.cwd(), "_design");
 
 function getPostsFilePaths(): string[] {
   return fs.readdirSync(POSTS_PATH).filter((path) => /\.mdx?$/.test(path));

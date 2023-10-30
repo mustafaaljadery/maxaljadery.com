@@ -3,7 +3,7 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import Head from "next/head";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { IPost } from "../../interfaces/post";
-import { getPost, getAllPosts } from "../../../lib/mdxUtils";
+import { getPost, getAllPosts } from "../../../lib/designUtils";
 import { ParsedUrlQuery } from "querystring";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -15,6 +15,7 @@ type Props = {
 
 const components = {
   h1: (props: any) => <h1 className="">{props.children}</h1>,
+
   h2: (props: any) => (
     <h2 className="text-3xl mt-12 font-semibold text-[#363636]">
       {props.children}
@@ -59,13 +60,13 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
         <meta property="og:type" content="article" />
       </Head>
       <Header />
-      <div className="w-full flex flex-col justify-center items-center">
-        <article className="w-[95%] mt-12 md:w-3/4 xl:w-1/2 flex flex-col justify-start items-start">
+      <div className="w-full flex flex-col justify-center items-center pb-16">
+        <article className="w-[95%] mt-20 md:w-3/4 flex flex-col justify-start items-start">
           <div className="flex flex-col justify-start items-start">
-            <h1 className="text-4xl font-bold text-[#363636]">
+            <h1 className="text-6xl font-bold text-[#363636]">
               {frontMatter.title}
             </h1>
-            <p className="mt-5 text-lg text-gray-500">
+            <p className="mt-5 text-base font-light text-gray-500">
               {frontMatter.description}
             </p>
             <></>
