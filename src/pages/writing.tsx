@@ -44,6 +44,12 @@ const methods = [
     link: "/posts/decomposing-monosemanticity",
   },
   {
+    name: "Inner vs Outer Model Alignment",
+    description:
+      "A discussion of exisistential AI risks from the point of view of inner vs outer alignment.",
+    link: "/posts/inner-vs-outer-alignment",
+  },
+  {
     name: "Concurrently Scraping & Tokenizing Wikipedia using GoLang",
     description:
       "A design doc on building a Wikipedia scraper with concurrency and tokenizer with OpenAI's tiktoken in GoLang.",
