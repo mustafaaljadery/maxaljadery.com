@@ -92,12 +92,14 @@ export default function Home() {
               are the <span className="text-[#363636] font-bold">ONLY</span>{" "}
               things I care about.
             </p>
+            {/*
             <p className="mt-6 text-xl text-gray-500 font-light">
               My interests are{" "}
               <span className="font-medium text-[#363636]">AI</span>,{" "}
               <span className="font-medium text-[#363636]">systems</span>, and{" "}
               <span className="font-medium text-[#363636]">finance</span>.
             </p>
+  */}
           </div>
           {/*
           <div className="flex flex-col mt-20">
