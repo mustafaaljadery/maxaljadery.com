@@ -311,6 +311,19 @@ export default function Work() {
         <title>Work - Mustafa Aljadery</title>
       </Head>
       <Header />
+      <button
+        onClick={() => {
+          (function () {
+            //@ts-ignore
+            if (window.beehiiv && window.beehiiv.showRecommendations) {
+              //@ts-ignore
+              window.beehiiv.showRecommendations("foo@bar.baz");
+            }
+          })();
+        }}
+      >
+        test
+      </button>
       <main className="flex flex-col w-full justify-center items-center">
         <div className="w-[95%] md:w-3/4 xl:w-1/2 flex flex-col">
           <div className="flex flex-col mt-16">
