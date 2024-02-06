@@ -46,6 +46,11 @@ export default function Home() {
     <>
       <Head>
         <title>Mustafa Aljadery</title>
+        <script
+          src="https://embeds.staginghiiv.com/recommendations.js?_bhpid=13020644-15e7-4c33-bb4e-aacb03e926f2&v=1"
+          data-beehiiv-recommendations-widget
+          defer
+        ></script>
       </Head>
       <Header />
       <main className="flex flex-col mt-14 justify-center items-center w-full">
@@ -94,6 +99,7 @@ export default function Home() {
               <span className="font-medium text-[#363636]">finance</span>.
             </p>
           </div>
+          {/*
           <div className="flex flex-col mt-20">
             <p className="font-semibold text-[#363636] text-2xl">About Me</p>
             <ul className="mt-5 list-disc flex flex-col font-regular text-gray-600 space-y-3">
@@ -105,7 +111,6 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          {/*
           <div className="flex flex-col mt-20">
             <h2 className="font-bold text-[#363636] text-2xl">
               Highly Proficient At
