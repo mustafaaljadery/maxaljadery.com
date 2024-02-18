@@ -73,7 +73,7 @@ const nextConfig = {
       },
       {
         source: "/wikipedia",
-        destiantion: "https://github.com/mustafaaljadery/wikipedia-scraper",
+        destination: "https://github.com/mustafaaljadery/wikipedia-scraper",
         permanent: true,
       },
       {
