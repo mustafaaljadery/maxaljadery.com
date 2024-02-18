@@ -98,11 +98,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/text-editor",
-        destination: "https://github.com/mustafaaljadery/chat-ui",
-        permanent: true,
-      },
-      {
         source: "/data-visualization",
         destination: "https://github.com/mustafaaljadery/cybersyn",
         permanent: true,
