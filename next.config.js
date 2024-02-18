@@ -46,6 +46,67 @@ const nextConfig = {
         destination: "https://fieldtriprecords.vercel.app/",
         permanent: true,
       },
+      {
+        source: "/security-analysis",
+        destination: "https://www.maxaljadery.com/research/security.pdf",
+        permanent: true,
+      },
+      {
+        source: "/network-design",
+        destination: "https://www.maxaljadery.com/research/networks.pdf",
+        permanent: true,
+      },
+      {
+        source: "/parallel",
+        destination: "https://www.maxaljadery.com/research/speed.pdf",
+        permanent: true,
+      },
+      {
+        source: "/calculus",
+        destination: "https://mustafaaljadery.github.io/",
+        permanent: true,
+      },
+      {
+        source: "/bedrock",
+        destination: "https://github.com/mustafaaljadery/anthropic-bedrock",
+        permanent: true,
+      },
+      {
+        source: "/wikipedia",
+        destiantion: "https://github.com/mustafaaljadery/wikipedia-scraper",
+        permanent: true,
+      },
+      {
+        source: "/augment",
+        destination: "https://augmentml.org/",
+        permanent: true,
+      },
+      {
+        source: "/llama",
+        destination: "https://github.com/mustafaaljadery/lora-fine-tune",
+        permanent: true,
+      },
+      {
+        source: "/deep-nn",
+        destination: "https://github.com/mustafaaljadery/deep-nn-scratch",
+        permanent: true,
+      },
+      {
+        source: "/embedding-search",
+        destination:
+          "https://github.com/mustafaaljadery/paul-graham-essays-search",
+        permanent: true,
+      },
+      {
+        source: "/text-editor",
+        destination: "https://github.com/mustafaaljadery/chat-ui",
+        permanent: true,
+      },
+      {
+        source: "/data-visualization",
+        destination: "https://github.com/mustafaaljadery/cybersyn",
+        permanent: true,
+      },
     ];
   },
 };
