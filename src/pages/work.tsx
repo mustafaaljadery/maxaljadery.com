@@ -4,6 +4,34 @@ import Head from "next/head";
 
 const works = [
   {
+    name: "MlxCLI",
+    snippet: "CLI functions to run LLMs from terminal.",
+    description:
+      "Run large ML models optimized for Apple Silicon directly from your terminal.",
+    link: "",
+    github: "https://github.com/mustafaaljadery/mlxcli",
+    tools: [
+      {
+        image: "/tools/python.png",
+        alt: "Python image",
+      },
+    ],
+  },
+  {
+    name: "MlxServer",
+    snippet: "Create local server to run LLMs.",
+    description:
+      "Run inference on large ML models locally optimized for Apple Silicon.",
+    link: "https://mlxserver.com",
+    github: "https://github.com/mustafaaljadery/mlxserver",
+    tools: [
+      {
+        image: "/tools/python.png",
+        alt: "Python image",
+      },
+    ],
+  },
+  {
     name: "Anthropic Bedrock",
     snippet: "SDKs to interact with Anthropic's models on AWS Bedrock.",
     description:

@@ -102,6 +102,11 @@ const nextConfig = {
         destination: "https://github.com/mustafaaljadery/cybersyn",
         permanent: true,
       },
+      {
+        source: "/mlxcli",
+        destination: "https://github.com/mustafaaljadery/mlxcli",
+        permanent: true,
+      },
     ];
   },
 };
