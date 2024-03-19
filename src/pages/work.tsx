@@ -29,6 +29,10 @@ const works = [
         image: "/tools/python.png",
         alt: "Python image",
       },
+      {
+        image: "/tools/nextjs.png",
+        alt: "NextJS image",
+      },
     ],
   },
   {
